@@ -1,26 +1,55 @@
 
 const certifications = [
-  "Cisco — Introduction to Cyber Security",
-  "Front-End Internship — Femtosoft",
-  "Infosys Springboard — Front-End",
-  "GUVI — UI/UX",
-  "Mendix — Rapid Developer",
+  {
+    name: "Cisco — Introduction to Cyber Security",
+    file: "/certificates/cisco.pdf.pdf",
+  },
+  {
+    name: "Front-End Internship — Femtosoft",
+    file: null,
+  },
+  {
+    name: "Infosys Springboard — Front-End",
+    file: "/certificates/frontend.pdf.pdf",
+  },
+  {
+    name: "GUVI — UI/UX",
+    file: "/certificates/guvi.jpeg.jpeg",
+  },
+  {
+    name: "Mendix — Rapid Developer",
+    file: "/certificates/mendix.pdf.pdf",
+  },
 ];
 
 export default function Certifications() {
   return (
     <section className="content-page">
       <p className="eyebrow">LEARNING & DEVELOPMENT</p>
-      <h1>Certifications & <span>Training</span></h1>
+      <h1>
+        Certifications & <span>Training</span>
+      </h1>
 
       <div className="info-grid">
         {certifications.map((item, index) => (
-          <article className="info-card certification" key={item}>
-            <span className="project-number">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-            <h3>{item}</h3>
-          </article>
+          <a
+            key={item.name}
+            href={item.file || undefined}
+            target={item.file ? "_blank" : undefined}
+            rel={item.file ? "noopener noreferrer" : undefined}
+            style={{
+              color: "inherit",
+              textDecoration: "none",
+              cursor: item.file ? "pointer" : "default",
+            }}
+          >
+            <article className="info-card certification">
+              <span className="project-number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3>{item.name}</h3>
+            </article>
+          </a>
         ))}
       </div>
     </section>
