@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?fsamily=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 :root {
   font-family: "DM Sans", sans-serif;
@@ -311,4 +311,58 @@ h1 {
   .footer {
     flex-direction: column;
   }
+  
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  align-items: start;
+  gap: 40px;
+}
+
+.hero-content {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.hero-photo {
+  grid-column: 2;
+  grid-row: 1;
+  width: 280px;
+  margin-top: 0;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 18px;
+  border: 2px solid #39ff88;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .hero-photo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 220px;
+    max-width: 100%;
+    justify-self: center;
+  }
+
+  .hero-photo img {
+    height: 270px;
+  }
+}
+
 
