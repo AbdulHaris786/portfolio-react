@@ -5,12 +5,14 @@ import Navbar from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 
 import Home from "./pages/home.jsx";
-import About from "./pages/About.jsx";
-import Skills from "./pages/Skills.jsx";
-import Projects from "./pages/Projects.jsx";
-import Education from "./pages/Education.jsx";
+
+import About from "./pages/about.jsx";
+import Skills from "./pages/skills.jsx";
+import Projects from "./pages/projects.jsx";
+import Education from "./pages/education.jsx";
+import Contact from "./pages/contact.jsx";
+
 import Certifications from "./pages/certification.jsx";
-import Contact from "./pages/Contact.jsx";
 
 import "./App.css";
 
