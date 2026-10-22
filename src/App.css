@@ -70,11 +70,16 @@ h1 span {
   color: var(--accent);
 }
 
+
 .page-container {
-  width: min(1100px, 86%);
+  width: min(1100px, 90%);
   min-height: 75vh;
-  margin: auto;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
 }
+
 
 .hero {
   min-height: 76vh;
@@ -273,10 +278,15 @@ h1 {
   }
 }
 
+
 @media (max-width: 600px) {
   .page-container {
-    width: 90%;
+    width: 94%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
+}
+
 
   .nav-links {
     gap: 12px;
@@ -301,4 +311,4 @@ h1 {
   .footer {
     flex-direction: column;
   }
-}
+

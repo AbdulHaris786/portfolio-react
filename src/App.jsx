@@ -21,7 +21,7 @@ export default function App() {
     <>
       <Navbar />
 
-      <main>
+       <main className="page-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
