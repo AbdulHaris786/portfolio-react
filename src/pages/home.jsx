@@ -8,7 +8,6 @@ export default function Home() {
       <h1>
         Hi, I'm <span>Abdul Haris M</span>
       </h1>
-      <h2>Web Development Enthusiast</h2>
       <p className="intro">
         I'm a Computer Science Engineering student interested in
         web development, UI design, and building useful digital experiences.
