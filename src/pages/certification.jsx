@@ -20,6 +20,10 @@ const certifications = [
     name: "Mendix — Rapid Developer",
     file: "/certificates/mendix.pdf.pdf",
   },
+  {
+    name: "NPTEL — Software Testing",
+    file: "/certificates/Software%20Testing.pdf",
+  },
 ];
 
 export default function Certifications() {
