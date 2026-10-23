@@ -77,9 +77,7 @@ export default function Projects() {
         ))}
       </div>
 
-      <p className="muted">
-        Project source links can be added when the repositories are ready.
-      </p>
+    
     </section>
   );
 }
