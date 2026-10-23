@@ -29,12 +29,12 @@ const projects = [
     tech: "Figma · UI/UX",
   },
   {
-  number: "05",
-  title: "NOVASTORE – E-commerce Website",
-  description:
-    "A modern e-commerce frontend with product browsing, cart, wishlist, and demo checkout.",
-  tech: "React · Redux · React Router · CSS",
-},
+    number: "05",
+    title: "NOVASTORE – E-commerce Website",
+    description:
+      "A modern e-commerce frontend with product browsing, cart, wishlist, and demo checkout.",
+    tech: "React · Redux · React Router · CSS",
+  },
 ];
 
 export default function Projects() {
@@ -56,18 +56,22 @@ export default function Projects() {
             <p>{project.description}</p>
             <p className="tech">{project.tech}</p>
 
-            {(project.number === "01" || project.number === "05") && (
-             <a
-  href={
-  project.number === "01"
-    ? "https://harisstore.vercel.app/"
-    : "https://novastoreharis.vercel.app/"
-}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  View Project
-</a>
+            {(project.number === "01" ||
+              project.number === "03" ||
+              project.number === "05") && (
+              <a
+                href={
+                  project.number === "01"
+                    ? "https://harisstore.vercel.app/"
+                    : project.number === "03"
+                    ? "https://abdulharis.vercel.app/"
+                    : "https://novastoreharis.vercel.app/"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
             )}
           </article>
         ))}
