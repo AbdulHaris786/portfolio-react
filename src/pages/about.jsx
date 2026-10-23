@@ -5,10 +5,7 @@ export default function About() {
       <p className="eyebrow">GET TO KNOW ME</p>
       <h1>About <span>Me</span></h1>
       <p>
-        I'm Abdul Haris M, a B.E. Computer Science and Engineering
-        student at S.A. Engineering College, graduating in 2027.
-        I'm interested in web development, UI/UX design, and
-        creating user-friendly websites.
+       I'm a final-year Computer Science Engineering student passionate about web development and technology. Through internships and personal projects, I've gained practical experience in building responsive user interfaces and web applications. I'm continuously improving my skills in frontend development, databases, and programming while exploring new ways to create useful and user-friendly digital experiences. I'm looking forward to starting my professional journey and growing as a developer.
       </p>
 
       <div className="info-grid">

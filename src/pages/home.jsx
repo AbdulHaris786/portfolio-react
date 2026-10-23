@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
 
         <p className="intro">
-          I'm a final-year Computer Science Engineering student passionate about web development and technology. Through internships and personal projects, I've gained practical experience in building responsive user interfaces and web applications. I'm continuously improving my skills in frontend development, databases, and programming while exploring new ways to create useful and user-friendly digital experiences. I'm looking forward to starting my professional journey and growing as a developer.
+          I'm a Computer Science Engineering student interested in web development, UI design, and building useful digital experiences.
         </p>
 
         <div className="actions">
