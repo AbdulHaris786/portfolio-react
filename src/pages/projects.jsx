@@ -34,18 +34,34 @@ export default function Projects() {
   return (
     <section className="content-page">
       <p className="eyebrow">WHAT I'VE WORKED ON</p>
-      <h1>My <span>Projects</span></h1>
+      <h1>
+        My <span>Projects</span>
+      </h1>
 
       <div className="info-grid">
         {projects.map((project) => (
-          <article className="info-card project-card" key={project.number}>
+          <article
+            className="info-card project-card"
+            key={project.number}
+          >
             <p className="project-number">{project.number}</p>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <p className="tech">{project.tech}</p>
+
+            {project.number === "01" && (
+              <a
+                href="https://harisstore.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+            )}
           </article>
         ))}
       </div>
+
       <p className="muted">
         Project source links can be added when the repositories are ready.
       </p>
