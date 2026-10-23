@@ -21,15 +21,9 @@ const projects = [
       "A personal website to present my skills, projects, and background.",
     tech: "Web Development",
   },
+  
   {
     number: "04",
-    title: "Spotify-style UI",
-    description:
-      "A music-streaming interface concept designed in Figma.",
-    tech: "Figma · UI/UX",
-  },
-  {
-    number: "05",
     title: "NOVASTORE – E-commerce Website",
     description:
       "A modern e-commerce frontend with product browsing, cart, wishlist, and demo checkout.",
@@ -58,7 +52,7 @@ export default function Projects() {
 
             {(project.number === "01" ||
               project.number === "03" ||
-              project.number === "05") && (
+              project.number === "04") && (
               <a
                 href={
                   project.number === "01"
